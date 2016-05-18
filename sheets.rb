@@ -11,40 +11,45 @@ end
 
 
 class Game 
+	attr_accessor :c3, :c2, :c1 
 	def initialize
-		@c1 = c1
-		@c2 = c2
-		
-		
+		@c1 = card1
+		@c2 = card2
+		@c3 = card3
 	end
 
-	def c1
+	def card1
 		c1 = [1,2,3,4,5,6,7,8,9,10,11,12,13].sample
 		return c1
 	end
 
-	def c2
+	def card2
 		c2 = [1,2,3,4,5,6,7,8,9,10,11,12,13].sample
 		return c2
 	end
 
-	def c3
+	def card3
 		c3 = [1,2,3,4,5,6,7,8,9,10,11,12,13].sample
 		return c3
 	end
 
 	def results
-	if @c2 > c3 > c1
-		then puts "Player wins"
+	if @c2 > @c3 && @c2 < @c1  
+		puts @c3, @c2, @c1
+		return "Player wins"
+	elsif @c2 < @c3 && @c2 > @c1
+		puts @c3, @c2, @c1
+		return "Player wins"
+	else
+		puts @c3, @c2, @c1
+		return "Player Loses"
 	end
 
-
-
+end
 end
 
 
-game = Game.new
-puts game.c2
-puts game.c3
-puts game.c1
+
+
+
 

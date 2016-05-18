@@ -1,6 +1,29 @@
 <h1> Welcome to Sheets Cards Game </h1>
- <h2> Can you split the two cards below </h2>
+ <h2> Can you split the two cards below? </h2>
 <br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br>
+<br>
+<%= @game.c1 %>
+<br>
+<br>
+<%= @game.c3 %>
+<br>
+
+
+<h3> Do you want to play this hand? </h3>
+
+<form method="POST" action="/">
+	<select name= "yesorno">
+<option value="yes">yes</option>
+<option value="no">no</option>
+	</select>
+	<input type="submit" >
+
+
+</form>
+
+<%= @game.c2 %>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <a href='/instructions'> Need help? </a>
