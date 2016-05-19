@@ -1,21 +1,14 @@
 
-class Player 
-	attr_accessor :name, :response, :cash
-
-	def initialize(name)
-		@name = name
-		@cash = 100
-	end
-end
 
 
 
 class Game 
-	attr_accessor :c3, :c2, :c1 
+	attr_accessor :c3, :c2, :c1, :cash
 	def initialize
 		@c1 = card1
 		@c2 = card2
 		@c3 = card3
+		@cash = 100
 	end
 
 	def card1
@@ -37,12 +30,15 @@ class Game
 	if @c2 > @c3 && @c2 < @c1  
 		puts @c3, @c2, @c1
 		return "Player wins"
+		@cash += 10
 	elsif @c2 < @c3 && @c2 > @c1
 		puts @c3, @c2, @c1
 		return "Player wins"
+		@cash += 10
 	else
 		puts @c3, @c2, @c1
 		return "Player Loses"
+		@cash -= 10
 	end
 
 end
