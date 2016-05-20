@@ -26,6 +26,7 @@ class Game
 		return c3
 	end
 
+
 	def results
 	if @c2 > @c3 && @c2 < @c1  
 		puts @c3, @c2, @c1

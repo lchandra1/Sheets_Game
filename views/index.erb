@@ -1,13 +1,68 @@
 <h1> Welcome to Sheets Cards Game </h1>
-<h3> Current cash = $
-<%= @money.cash %> </h3>
  <h2> Can you split the two cards below? </h2>
 <br>
 <br>
-<%= @game.c1 %>
+
+<% if @game.c1.to_s == "1" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Playing_card_heart_A.svg">
+	  <% elsif @game.c1.to_s == "2" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Playing_card_heart_2.svg">
+	  <% elsif @game.c1.to_s == "3" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Playing_card_heart_3.svg">
+	  <% elsif @game.c1.to_s == "4" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Playing_card_heart_4.svg">
+	  <% elsif @game.c1.to_s == "5" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Playing_card_heart_5.svg">
+	  <% elsif @game.c1.to_s == "6" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Playing_card_heart_6.svg">
+	  <% elsif @game.c1.to_s == "7" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Playing_card_heart_7.svg">
+	  <% elsif @game.c1.to_s == "8" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Playing_card_heart_8.svg">
+	  <% elsif @game.c1.to_s == "9" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Playing_card_heart_9.svg">
+	  <% elsif @game.c1.to_s == "10" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Playing_card_heart_10.svg">
+	  <% elsif @game.c1.to_s == "11" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Playing_card_heart_J.svg">
+	  <% elsif @game.c1.to_s == "12" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Playing_card_heart_Q.svg">
+	  <% elsif @game.c1.to_s == "13" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Playing_card_heart_K.svg">
+	 <% end %>
+
+
+
+	 <% if @game.c3.to_s == "1" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Playing_card_heart_A.svg">
+	  <% elsif @game.c3.to_s == "2" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Playing_card_heart_2.svg">
+	  <% elsif @game.c3.to_s == "3" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Playing_card_heart_3.svg">
+	  <% elsif @game.c3.to_s == "4" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Playing_card_heart_4.svg">
+	  <% elsif @game.c3.to_s == "5" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Playing_card_heart_5.svg">
+	  <% elsif @game.c3.to_s == "6" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Playing_card_heart_6.svg">
+	  <% elsif @game.c3.to_s == "7" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Playing_card_heart_7.svg">
+	  <% elsif @game.c3.to_s == "8" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Playing_card_heart_8.svg">
+	  <% elsif @game.c3.to_s == "9" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Playing_card_heart_9.svg">
+	  <% elsif @game.c3.to_s == "10" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Playing_card_heart_10.svg">
+	  <% elsif @game.c3.to_s == "11" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Playing_card_heart_J.svg">
+	  <% elsif @game.c3.to_s == "12" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Playing_card_heart_Q.svg">
+	  <% elsif @game.c3.to_s == "13" %>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Playing_card_heart_K.svg">
+	 <% end %>
 <br>
 <br>
-<%= @game.c3 %>
+
 <br>
 
 
@@ -25,6 +80,8 @@
 
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br>
 
 <a href='/instructions'> Need help? </a>
+<br> <br> <br>
+<address> Luke and Alden incorporated </address>
