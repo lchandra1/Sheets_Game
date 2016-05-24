@@ -5,9 +5,7 @@
 class Game 
 	attr_accessor :c3, :c2, :c1, :cash
 	def initialize
-		@c1 = card1
-		@c2 = card2
-		@c3 = card3
+		deal
 		@cash = 100
 	end
 
@@ -26,20 +24,29 @@ class Game
 		return c3
 	end
 
+	def deal
+		@c1 = card1
+		@c2 = card2
+		@c3 = card3
+	end
+
 
 	def results
 	if @c2 > @c3 && @c2 < @c1  
 		puts @c3, @c2, @c1
-		return "Player wins"
 		@cash += 10
+		return "Player wins $10"
+
 	elsif @c2 < @c3 && @c2 > @c1
 		puts @c3, @c2, @c1
-		return "Player wins"
 		@cash += 10
+		return "Player wins $10"
+		
 	else
 		puts @c3, @c2, @c1
-		return "Player Loses"
 		@cash -= 10
+		return "Player Loses $10"
+		
 	end
 
 end

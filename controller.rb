@@ -3,8 +3,17 @@ require_relative 'sheets.rb'
 enable :sessions
 
 get '/' do 
-	@game = Game.new
-	session[:game] = @game
+
+	if session[:game]
+		@game = session[:game]
+		@game.deal
+	else
+		@game = Game.new
+		session[:game] = @game
+	end
+
+
+	
 	erb :index
 end
 
@@ -22,4 +31,5 @@ get '/instructions' do
 end
 
 post '/results' do
+
 	end

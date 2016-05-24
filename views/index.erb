@@ -1,9 +1,16 @@
-<h1> Welcome to Sheets Cards Game </h1>
- <h2> Can you split the two cards below? </h2>
+<h1><ins> Welcome to Sheets Cards Game</ins> </h1>
 <br>
+<h3> Instructions: <br>
+	In this game, you must try to guess a card that is in between the two cards displayed. <br> 
+	Choose yes if you think the next card will be in between the first two cards. <br>
+	If you click yes and the card is between the original two, you win. <br>
+	If your card is not in between the original two cards, you lose. <br>
+	Ace is low and player loses on a tie.</h3>
 <body bgcolor="#E6E6FA">
-<br>
 
+<h2> <i> <ins>Current Cash $<%= @game.cash %> </ins> </i> </h2>
+
+ <h2> Can you split the two cards below? </h2>
 <% if @game.c1.to_s == "1" %>
 	  <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Playing_card_heart_A.svg">
 	  <% elsif @game.c1.to_s == "2" %>
@@ -83,6 +90,5 @@
 
 <br> <br>
 
-<a href='/instructions'> Need help? </a>
-<br> <br> <br> <br> <br>
+ <br> <br>
 <address> Luke and Alden Incorporated </address>
