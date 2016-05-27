@@ -42,8 +42,15 @@ class Game
 		@cash += 10
 		return "Player wins $10"
 		
-	else
+	elsif @c2 == @c3 || @c2 == @c1
 		puts @c3, @c2, @c1
+
+		@cash -= 20
+		return "Player Loses $20"
+
+	else 
+		puts @c3, @c2, @c1
+
 		@cash -= 10
 		return "Player Loses $10"
 		

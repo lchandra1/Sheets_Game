@@ -1,15 +1,17 @@
 <h1><ins> Welcome to Sheets Cards Game</ins> </h1>
 <br>
-<h3> Instructions: <br>
-	In this game, you must try to guess a card that is in between the two cards displayed. <br> 
-	Choose yes if you think the next card will be in between the first two cards. <br>
-	If you click yes and the card is between the original two, you win. <br>
-	If your card is not in between the original two cards, you lose. <br>
-	Ace is low and player loses on a tie.</h3>
+<h3> In this game, you must choose if the next card displayed is in between the two original cards. <br> 
+	Choose Yes if you think the next card will rank between the two cards already face up. <br>
+	Choose No if you want a new hand.  <br>
+	If you click Yes and the new card ranks between the original two cards displayed, you win. <br>
+	If your card does not rank between the original two cards, you lose. <br>
+	If your card equals one of the two original cards, you lose double. <br>
+	Ace is low, and player loses on a tie. <br>
+	To reset your cash to $100, completely quit the browser and restart the program. </h3>
 <body bgcolor="#E6E6FA">
-
+<br>
 <h2> <i> <ins>Current Cash $<%= @game.cash %> </ins> </i> </h2>
-
+<br>
  <h2> Can you split the two cards below? </h2>
 <% if @game.c1.to_s == "1" %>
 	  <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Playing_card_heart_A.svg">
@@ -71,7 +73,7 @@
 <br>
 <br>
 
-<br>
+
 
 
 <h3> Do you want to play this hand? </h3>
